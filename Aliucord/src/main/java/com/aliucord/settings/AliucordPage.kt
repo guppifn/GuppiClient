@@ -29,12 +29,12 @@ class AliucordPage : SettingsPage() {
     override fun onViewBound(view: View) {
         super.onViewBound(view)
 
-        setActionBarTitle("Aliucord")
-        setActionBarSubtitle("Aliucord Settings")
+        setActionBarTitle("Guppi")
+        setActionBarSubtitle("Guppi Settings")
 
         val ctx = view.context
 
-        addHeader(ctx, "Aliucord Settings")
+        addHeader(ctx, "Guppi Settings")
         addSwitch(ctx,
             AUTO_DISABLE_ON_CRASH_KEY,
             "Automatically disable plugins on crash",
@@ -50,7 +50,7 @@ class AliucordPage : SettingsPage() {
             addSwitch(
                 ctx,
                 ALIUCORD_FROM_STORAGE_KEY,
-                "Use Aliucord from storage",
+                "Use Guppi from storage",
                 "Meant for developers. Do not enable unless you know what you're doing. If someone else is telling you to do this, you are likely being scammed."
             )
         }
